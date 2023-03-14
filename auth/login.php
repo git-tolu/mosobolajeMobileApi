@@ -47,6 +47,7 @@ if (($_SERVER['REQUEST_METHOD']) === 'POST') {
                 echo json_encode([
                     'login' => 'Successful',
                     'user_id'=> $login['username'],
+                    'paddress'=> $login['paddress'],
                     'fullname'=> $login['fullname'],
                     'email'=> $login['emailaddress'],
                     'status' => 200
